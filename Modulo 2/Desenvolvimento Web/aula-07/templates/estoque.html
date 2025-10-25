@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Projeto Flask - Carros</title>
+</head>
+<body>
+    <header>
+        <h1>Bem vindos ao Armazém de Carros</h1>
+    </header>
+    <main>
+        <menu>
+            <a href="{{ url_for('index') }}">VEJA NOSSO ESTOQUE</a>
+            <a href="#">DICAS PARA COMPRAR</a>
+            <a href="{{ url_for('faleconosco') }}">FALE CONOSCO</a>
+        </menu>
+
+        <h2>Armazém de Carros</h2>
+  
+        <table>
+            <tr>
+                <td><strong>Car Blue</strong></td>
+            </tr>
+            <tr>
+                <td><img src="{{ url_for('static', filename='img/car.jpg') }}"width="500px" height="350px" ></td>
+                <td><strong>VALOR: 1.500.000.0<strong></td>
+            </tr>
+
+        </table>
+
+
+
+
+    </main>
+
+    <footer>
+
+        <p>Desenvolvido por <strong>Vitin</strong></p>
+        <img src="{{ url_for('static', filename='logo.png') }}" width="35px" height="35px">
+    </footer>
+
+</body>
+</html>

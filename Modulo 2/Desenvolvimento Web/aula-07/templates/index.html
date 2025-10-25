@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Projeto Flask - Carros</title>
+</head>
+<body>
+    <header>
+        <h1>Bem vindos ao Armazém de Carros</h1>
+    </header>
+    <main>
+        <menu>
+            <a href="{{ url_for('index') }}">PÁGINA INICIAL</a>
+            <a href="{{ url_for('estoque') }}">VEJA NOSSO ESTOQUE</a>
+            <a href="#">DICAS PARA COMPRAR</a>
+            <a href="{{ url_for('faleconosco') }}">FALE CONOSCO</a>
+        </menu>
+
+        <h2>Sobre nós</h2>
+        <h2>Armazém de Carros</h2>
+
+        <p>O tempo passa, mas o estilo permanece.</p>
+
+        <p>Bem-vindo ao Armazém de Carros, o ponto de encontro dos apaixonados por clássicos sobre rodas. Aqui, celebramos a essência dos anos 60, 70 e 80, décadas que marcaram a história do automobilismo com design, potência e personalidade.</p>
+
+        <b>🚗 Modelos Icônicos</b>
+        <p>De muscle cars americanos a clássicos nacionais, nossa curadoria traz os carros que fizeram (e ainda fazem) corações acelerarem.</p>
+
+        <b>🔧 Restaurados com Alma</b>
+        <p>Cada veículo passa por um processo minucioso de restauração, mantendo a originalidade e respeitando cada detalhe da época.</p>
+
+        📍 São Paulo com alma vintage
+        <p>Nosso espaço é mais que um showroom – é uma experiência. Venha visitar e reviver a história do automobilismo.</p>
+            
+            </main>
+
+    <footer>
+
+        <p>Desenvolvido por <strong>Vitin</strong></p>
+        <img src="{{ url_for('static', filename='logo.png') }}" width="35px" height="35px">
+    </footer>
+
+</body>
+</html>
